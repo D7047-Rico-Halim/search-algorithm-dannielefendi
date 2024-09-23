@@ -4,12 +4,12 @@ from graphs import bfs, dfs, ucs, greedy_bfs, a_star
 
 # Declare the graph as an adjacency list with edge weights
 graph = {
-    'A': {'B': 1, 'C': 4},
-    'B': {'D': 5, 'C': 2},
-    'C': {'E': 3, 'D': 1},
-    'D': {'F': 2},
-    'E': {'F': 1},
-    'F': {'G': 3},
+    'A': [('B', 1), ('C', 4)],
+    'B': [('D', 5), ('C', 2)],
+    'C': [('E', 3), ('D', 1)],
+    'D': [('F', 2)],
+    'E': [('F', 1)],
+    'F': [('F', 3)],
     'G': {}
 }
 
